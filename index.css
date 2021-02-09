@@ -1,0 +1,160 @@
+body,container{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-46deg, #0b485b, #f56217, #2196f3, #f44336);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+    font-family: 'open sans';
+}
+h1{
+    font-weight: 200;
+    /* text-align: center; */
+    padding-top: 11%;
+    color: white;
+}
+h2{
+    padding-top: 6%;
+}
+@keyframes gradient{
+    0%
+    {
+        background-position: 0% 50%;
+    }
+    50%
+    {
+        background-position: 100% 50%;
+    }
+    100%
+    {
+        background-position: 0% 50%;
+    }
+}
+.box{
+    width: 450px;
+    height: 10px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.box > i {
+    font-size: 20px;
+    color: #777;
+}
+.box > input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+
+}
+.firstCol-Style{
+    align-items: center;
+}
+.searchButton-style{
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    outline: none;
+}
+
+.song-list li span {
+    float: right;
+    background-color: #9e2092;
+    border: 0;
+    font-size: 12px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 4px 10px;
+    text-transform: capitalize;
+  }
+  .btn {
+    background-color: rgb(26, 170, 115);
+    margin: 0 auto;
+    border: 0;
+    font-size: 14px;
+    border-radius: 10px;
+    color: rgb(199, 193, 193);
+    cursor: pointer;
+    font-weight: 400;
+    padding: 6px 20px;
+    width: 100px;
+    text-transform: capitalize;
+  }
+
+
+
+.Songs-style{
+    margin-right: 8%;
+}
+
+.result{
+    margin-top: 20px;
+    position: relative;
+    display: block;
+    color: black;
+    text-align: center;
+    font-size: medium;
+}
+.results{
+    margin-top: 20px;
+    position: relative;
+    display: block;
+    color: black;
+    text-align: center;
+    font-size: large;
+}
+
+
+
+.song-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .song-list li {
+    border-radius: 8px;
+    background: linear-gradient(
+      to left,
+      rgba(128, 13, 223, 0),
+      rgba(14, 236, 151, 0)
+    );
+    margin-bottom: 20px;
+    width: 500px;
+    justify-content: space-evenly;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: overline;
+    text-decoration-color: rgb(12, 147, 100);
+    position: relative;
+  }
+  
+  .song-list li div {
+    float: left;
+  }
+  
+  
+  
+  @media only screen and (max-width: 800px) {
+    .container {
+      font-size: 20px;
+    }
+    button {
+      width: 80px;
+      max-width: 100%;
+    }
+    .song-list li {
+      margin-bottom: 15px;
+      max-width: 300px;
+      letter-spacing: 0.5px;
+      font-size: 17px;
+    }
+  }
